@@ -15,7 +15,7 @@
 	<description>SM brewery work</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 		<mapstruct.version>1.3.0.Final</mapstruct.version>
 	</properties>
 
@@ -65,11 +65,11 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-			<groupId>org.apache.mavan.plugins</groupId>
+			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-compiler-plugin</artifactId>
 			<version>3.8.0</version>
 			<configuration>
-			<annotationProcessorPath>
+			<annotationProcessorPaths>
 			<path>
 			
 			<groupId>org.mapstruct</groupId>
@@ -81,7 +81,7 @@
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
 			</path>
-			</annotationProcessorPath>
+			</annotationProcessorPaths>
 			<compilerArgs>
 				<compilerArg>-Amapstruct.defaultComponentModel=spring</compilerArg>
 			</compilerArgs>
